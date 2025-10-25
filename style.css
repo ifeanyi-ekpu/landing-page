@@ -5,25 +5,43 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  /* flex: 1; */
+}
+
+h2 {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
 .body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .hero {
   background-color: #1f2937;
   color: #f9faf8;
   display: flex;
+  width: 100%;
   flex-direction: column;
   padding: 0 90px;
-  border: 2px solid red;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding: 20px 50px 0;
 }
 
 .logo {
@@ -50,21 +68,49 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 90px 0;
-}
-
-.hero-content h1 {
-  font-size: 48px;
-  font-weight: 900;
-  /* flex: 1; */
+  padding: 90px 50px;
 }
 
 #hero-img img {
   width: 350px;
-  height: 200px;
+  height: 250px;
 }
 
 .box img {
   max-width: 200px;
   height: auto;
+}
+
+.cta-button {
+  background-color: #3882f6;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+  background-color: rgb(56, 130, 246, 0.7);
+}
+
+.info {
+  padding: 40px 150px;
+}
+
+.info-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+    flex: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(56, 130, 246);
+  padding: 0 20px;
+  box-shadow: 5px 5px 10px rgba(56, 130, 246, 0.3);
+  
 }
