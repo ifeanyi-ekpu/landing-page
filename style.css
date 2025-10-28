@@ -8,7 +8,6 @@ body {
 h1 {
   font-size: 48px;
   font-weight: 900;
-  /* flex: 1; */
 }
 
 h2 {
@@ -18,9 +17,9 @@ h2 {
   text-align: center;
 }
 
-p {
+/* p {
   text-align: center;
-}
+} */
 
 .body {
   display: flex;
@@ -41,19 +40,24 @@ p {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 50px 0;
 }
 
 .logo {
   font-size: 24px;
-  color: #f9faf8;
 }
 
 .hero a {
   text-decoration: none;
-  color: #e5e7eb;
   font-size: 18px;
   font-weight: normal;
+}
+
+.hero a,
+.logo,
+#main-footer {
+  color: #e5e7eb;
 }
 
 ul {
@@ -83,7 +87,7 @@ ul {
 
 .cta-button {
   background-color: #3882f6;
-  color: white;
+  color: #ffffff;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -105,35 +109,62 @@ ul {
 }
 
 .box {
-    flex: 0;
+  flex: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   border: 2px solid rgb(56, 130, 246);
   padding: 0 20px;
   box-shadow: 5px 5px 10px rgba(56, 130, 246, 0.3);
-  
 }
 
 .quote {
-    background-color: #e5e7eb;
-    display: flex;
-    justify-content: center;
-    padding: 40px 150px;
-    margin: 50px 0;
+  background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  padding: 40px 150px;
+  margin: 50px 0;
 }
 
-
 .quote p {
-    font-size: 36px;
-    color: #1f2937;
-    font-weight: 300;
-    font-style: italic;
-    text-align: left;
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 300;
+  font-style: italic;
+  text-align: left;
 }
 
 .quote-author {
-    font-weight: bold;
-    font-size: 26px;
-    text-align: right;
+  font-weight: bold;
+  font-size: 26px;
+  text-align: right;
+}
+
+.cta {
+  background-color: #3882f6;
+  width: 70%;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 150px;
+  margin: 50px 0;
+}
+
+.cta-content p {
+  padding: 0;
+  margin: 0;
+}
+
+.cta button {
+  align-self: flex-end;
+  border: 1px solid #ffffff;
+}
+
+#main-footer {
+  background-color: #1f2937;
+  display: flex;
+  width: 100%;
+  padding: 0 90px;
+  justify-content: center;
 }
