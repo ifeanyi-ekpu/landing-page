@@ -17,10 +17,6 @@ h2 {
   text-align: center;
 }
 
-/* p {
-  text-align: center;
-} */
-
 .body {
   display: flex;
   flex-direction: column;
@@ -85,16 +81,33 @@ ul {
   height: auto;
 }
 
+/* Styles for the PRIMARY button (Hero) */
 .cta-button {
   background-color: #3882f6;
   color: #ffffff;
   padding: 10px;
+  border: none;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .cta-button:hover {
   background-color: rgb(56, 130, 246, 0.7);
+}
+
+/* Styles for the SECONDARY button (Button CTA) */
+.cta-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  align-self: flex-end;
+}
+
+.cta-secondary:hover {
+    background-color: #ffffff;
+    color: rgb(56, 130, 246);
 }
 
 .info {
@@ -154,11 +167,6 @@ ul {
 .cta-content p {
   padding: 0;
   margin: 0;
-}
-
-.cta button {
-  align-self: flex-end;
-  border: 1px solid #ffffff;
 }
 
 #main-footer {
